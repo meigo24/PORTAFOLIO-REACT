@@ -1,17 +1,24 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  p {
-    line-height: 1.6;
-  }
-  
+.contenedor-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 600px; /* Ajustar según el ancho deseado */
+  margin: 1 auto; /* Centrar el contenedor horizontalmente */
+}
+
+.contenedor-perfil h1,
+.contenedor-perfil h2 {
+  text-align: center; /* Centrar texto horizontalmente */
+  margin:  auto; /* Centrar texto verticalmente */
+}
+
+.parrafo-perfil {
+  text-align: justify; /* Justificar el texto */
+  margin: 20px 0; /* Agregar espacio entre párrafos */
+}
+
+img {
+  float: right;
+}
+
+
