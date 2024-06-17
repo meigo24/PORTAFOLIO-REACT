@@ -12,7 +12,7 @@ export default function navbar() {
             
             <NavbarBrand>
                 <AcmeLogo />
-                <p className="font-bold text-inherit">REACT</p>
+                <p className="font-bold text-inherit"></p>
             </NavbarBrand>
         
             <NavbarContent className="hidden sm:flex gap-4" justify="center">

@@ -1,24 +1,23 @@
-.contenedor-perfil {
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+
+#contenedor-perfil {
+  width: 40%;
+}
+
+#contenedor-perfil img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#contenedor-perfil  {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  width: 600px; /* Ajustar según el ancho deseado */
-  margin: 1 auto; /* Centrar el contenedor horizontalmente */
-}
-
-.contenedor-perfil h1,
-.contenedor-perfil h2 {
-  text-align: center; /* Centrar texto horizontalmente */
-  margin:  auto; /* Centrar texto verticalmente */
-}
-
-.parrafo-perfil {
-  text-align: justify; /* Justificar el texto */
-  margin: 20px 0; /* Agregar espacio entre párrafos */
-}
-
-img {
-  float: right;
+  gap: 10px;
 }
 
 
