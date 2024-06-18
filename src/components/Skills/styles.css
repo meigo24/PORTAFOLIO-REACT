@@ -1,0 +1,30 @@
+.habilidades {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 75vh;
+  }
+  
+.skills-lists {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Espacio entre las columnas */
+  }
+  
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills-lists .MuiList-root {
+    width: 200px; /* Ajusta el ancho de las columnas */
+  }
+  
+.MuiListItemText-primary {
+    font-weight: bold;
+  }
+  
+.MuiListItemText-secondary {
+    color: gray;
+  }

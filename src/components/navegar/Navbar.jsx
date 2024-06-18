@@ -1,45 +1,40 @@
-import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-import {AcmeLogo} from "./AcmeLogo.jsx";
+import React from 'react';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import Inicio from '../Inicio/Inicio';
+import Projects from '../Projects/Projects';
+import Skills from '../Skills/Skills';
+import Contact from '../Contact/Contact';
+import './styles.css';
 
-export default function navbar() {
-    return (
-        
-        <Navbar>
-            <Link href="https://github.com/meigo24">
-            <img src = "https://th.bing.com/th/id/R.a234a9b60fb0267f858cda8f63afcd3c?rik=FshrapI7xwJGaw&pid=ImgRaw&r=0" width={65}/>
-                </Link>
-            
-            <NavbarBrand>
-                <AcmeLogo />
-                <p className="font-bold text-inherit"></p>
-            </NavbarBrand>
-        
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarItem isActive>
-                    <Link color="#" href="page">
-                        Home
-                    </Link>
-                </NavbarItem>
-                <NavbarItem >
-                    <Link href="/src/" color="#page">
-                        Projects
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Info
-                    </Link>
-                </NavbarItem>
-                <NavbarItem isActive>
-                    <Link href="#" aria-current="page">
-                        Contact
-                    </Link>
-                </NavbarItem>
-            </NavbarContent>
-            <NavbarContent justify="center">
+export default function Navbar() {
+  const [value, setValue] = React.useState('home');
 
-            </NavbarContent>
-        </Navbar>
-    );
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box sx={{ width: '100%' }}>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        textColor="secondary"
+        indicatorColor="secondary"
+        aria-label="secondary tabs example"
+      >
+        <Tab value="home" label="Home" />
+        <Tab value="projects" label="Projects" />
+        <Tab value="skills" label="Skills" />
+        <Tab value="contact" label="Contact" />
+      </Tabs>
+      <Box sx={{ p: 3 }}>
+        {value === 'home' && <Inicio />}
+        {value === 'projects' && <Projects />}
+        {value === 'skills' && <Skills />}
+        {value === 'contact' && <Contact />}
+      </Box>
+    </Box>
+  );
 }
