@@ -14,13 +14,13 @@ function Contact() {
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 2 }}>
         <EmailIcon sx={{ marginRight: 1 }} />
         <Typography variant="body1">
-          <Link href="mailto:leimy@example.com">leimy@example.com</Link>
+          <Link href="mailto:leimy@example.com">leimont17@hotmail.com</Link>
         </Typography>
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 2 }}>
         <PhoneIcon sx={{ marginRight: 1 }} />
         <Typography variant="body1">
-          +123 456 7890
+          +506 87339892
         </Typography>
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 2 }}>
@@ -34,7 +34,7 @@ function Contact() {
       <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 2 }}>
         <LinkedInIcon sx={{ marginRight: 1 }} />
         <Typography variant="body1">
-          <Link href="https://www.linkedin.com/in/leimypaez" target="_blank" rel="noopener">
+          <Link href="https://www.linkedin.com/in/leimy-páez-1209aa296" target="_blank" rel="noopener">
             linkedin.com/in/leimypaez
           </Link>
         </Typography>

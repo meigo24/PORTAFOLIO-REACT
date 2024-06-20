@@ -8,7 +8,7 @@
 .skills-lists {
     display: flex;
     flex-direction: row;
-    gap: 20px; /* Espacio entre las columnas */
+    gap: 20px; 
   }
   
 .skills-column {
@@ -18,7 +18,7 @@
 }
 
 .skills-lists .MuiList-root {
-    width: 200px; /* Ajusta el ancho de las columnas */
+    width: 200px;
   }
   
 .MuiListItemText-primary {
